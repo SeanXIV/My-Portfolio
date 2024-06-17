@@ -1,0 +1,51 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+<MudLayout>
+    <MudPaper Elevation="25" MaxWidth="700px" MaxHeight="50px" class="Mudpaper">
+        <MudToolBar Style="display: flex;" class="MudpaperEl">
+                    
+
+            <MudNavLink Href="" Match="NavLinkMatch.All">Home</MudNavLink>
+                         
+            <MudNavLink Href="about" Match="NavLinkMatch.Prefix">About</MudNavLink>
+                            
+            <MudNavLink Href="projects" Match="NavLinkMatch.Prefix">Projects</MudNavLink>
+
+            <MudNavLink Href="skills" Match="NavLinkMatch.Prefix">Skills</MudNavLink>
+                 
+            <MudNavLink Href="contact" Match="NavLinkMatch.Prefix">Contact</MudNavLink>
+
+       
+        </MudToolBar>
+    </MudPaper>
+
+
+    <MudMainContent>
+        <div class="content">
+            @Body
+        </div>
+    </MudMainContent>
+</MudLayout>
+
+
+<style>
+    .Mudpaper {
+        @*background-color: grey;*@
+        position: sticky;
+        top: 10px;
+        margin: auto;
+        padding: 10px;
+        border: 2px ;
+        border-radius: 60px;
+    }
+    .MudpaperEl {
+        margin: auto;
+        padding: 10px;
+        bottom: 17px;
+    }
+
+</style>
