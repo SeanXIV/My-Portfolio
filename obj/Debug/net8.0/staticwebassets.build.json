@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tg/vv602ZPqjZ0eQe75URN5QEcpd5ooZ6In7uVXO6fo=",
+  "Hash": "7PL1jWNB3pAVw7h/3mh26NhBwkQZWCbwQPykzoIi2Hw=",
   "Source": "My-portfolio1",
   "BasePath": "_content/My-portfolio1",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\gwanc\\side_work\\My-Portfolio\\wwwroot\\images\\5Andrew Seanego anseane022.jpg",
+      "SourceId": "My-portfolio1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gwanc\\side_work\\My-Portfolio\\wwwroot\\",
+      "BasePath": "_content/My-portfolio1",
+      "RelativePath": "images/5Andrew Seanego anseane022.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\5Andrew Seanego anseane022.jpg"
     }
   ]
 }

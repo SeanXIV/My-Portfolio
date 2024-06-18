@@ -5,17 +5,16 @@
 <MudDialogProvider />
 <MudSnackbarProvider />
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>Contact</PageTitle>
 
-<MudText Typo="Typo.h3" GutterBottom="true">Counter</MudText>
-<MudText Class="mb-4">Current count: @currentCount</MudText>
-<MudButton Color="Color.Primary" Variant="Variant.Filled" @onclick="IncrementCount">Click me</MudButton>
+<MudText Typo="Typo.h4" GutterBottom="true" class="heading">Contact Me</MudText>
 
-@code {
-    private int currentCount = 0;
 
-    private void IncrementCount()
-    {
-        currentCount++;
+<style>
+    .heading {
+        text-align: center;
+        font-family: 'Microsoft Sans Serif';
+        margin-bottom: 50px;
     }
-}
+</style>
+

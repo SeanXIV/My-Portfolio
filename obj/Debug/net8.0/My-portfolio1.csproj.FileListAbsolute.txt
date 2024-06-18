@@ -38,3 +38,4 @@ C:\Users\gwanc\side_work\My-Portfolio\obj\Debug\net8.0\refint\My-portfolio1.dll
 C:\Users\gwanc\side_work\My-Portfolio\obj\Debug\net8.0\My-portfolio1.pdb
 C:\Users\gwanc\side_work\My-Portfolio\obj\Debug\net8.0\My-portfolio1.genruntimeconfig.cache
 C:\Users\gwanc\side_work\My-Portfolio\obj\Debug\net8.0\ref\My-portfolio1.dll
+C:\Users\gwanc\side_work\My-Portfolio\obj\Debug\net8.0\My-portfolio1.sourcelink.json

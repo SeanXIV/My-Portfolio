@@ -1,7 +1,68 @@
 ﻿@page "/skills"
 
-<h3>Skills</h3>
+<PageTitle>Skills</PageTitle>
 
-@code {
+<MudText Typo="Typo.h4" GutterBottom="true" class="heading">My Skills</MudText>
 
-}
+<div class="row1">
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Agile Methodologies</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Problem Solving</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Linux</MudPaper>
+</div>
+<div class="row2">
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Python</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Java</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">C#</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">HTML</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">CSS</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Blazor</MudPaper>
+</div>
+<div class="row3">
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Software Development</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Web Development</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Systems Intergration</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Dev Ops</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Unit Testing</MudPaper>
+</div>
+<div class="row4">
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Relational Databases</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Docker</MudPaper>
+    <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Rest APIs</MudPaper>
+</div>
+
+<style>
+    .heading {
+        text-align: center;
+        font-family: 'Microsoft Sans Serif';
+        margin-bottom: 50px;
+    }
+    .row1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .row2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .row3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .row4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+</style>

@@ -4,20 +4,20 @@
 <MudPopoverProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
-<MudLayout>
-    <MudPaper Elevation="25" MaxWidth="700px" MaxHeight="50px" class="Mudpaper">
+<MudLayout class="layout">
+    <MudPaper MaxWidth="700px" MaxHeight="50px" class="Mudpaper">
         <MudToolBar Style="display: flex;" class="MudpaperEl">
                     
 
-            <MudNavLink Href="" Match="NavLinkMatch.All">Home</MudNavLink>
+            <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home" Title="Favorite" >Home</MudNavLink>
                          
-            <MudNavLink Href="about" Match="NavLinkMatch.Prefix">About</MudNavLink>
+            <MudNavLink Href="about" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.WorkHistory">Experience</MudNavLink>
                             
-            <MudNavLink Href="projects" Match="NavLinkMatch.Prefix">Projects</MudNavLink>
+            <MudNavLink Href="projects" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Notes">Projects</MudNavLink>
 
-            <MudNavLink Href="skills" Match="NavLinkMatch.Prefix">Skills</MudNavLink>
+            <MudNavLink Href="skills" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Score">Skills</MudNavLink>
                  
-            <MudNavLink Href="contact" Match="NavLinkMatch.Prefix">Contact</MudNavLink>
+            <MudNavLink Href="contact" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.ContactPage">Contact</MudNavLink>
 
        
         </MudToolBar>
@@ -34,18 +34,23 @@
 
 <style>
     .Mudpaper {
-        @*background-color: grey;*@
+        background-color: yellowgreen;
         position: sticky;
         top: 10px;
         margin: auto;
         padding: 10px;
         border: 2px ;
         border-radius: 60px;
+        color: white
     }
     .MudpaperEl {
         margin: auto;
         padding: 10px;
         bottom: 17px;
     }
+    .layout {
+        
+    }
+
 
 </style>

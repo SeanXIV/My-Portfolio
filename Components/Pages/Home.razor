@@ -3,7 +3,58 @@
 <PageTitle>Home</PageTitle>
 
 
-<MudText Typo="Typo.h3" GutterBottom="true">Hello, world!</MudText>
-<MudText Class="mb-8">Welcome to your new app, powered by MudBlazor and the .NET 8 Template!</MudText>
+<div class="heading">
+    <MudImage Src="images/5Andrew Seanego anseane022.jpg" Width="200" Height="150" Alt="Andrew Seanego" Elevation="25" Class="rounded-lg"/>
+</div>
+
+<MudText Typo="Typo.h4" Class="pl-16 pr-16 ml-16 mr-16 pt-10">
+    Hi , My name is Andrew Seanego. I am a software developer
+    with 2 years training experience from WeThinkCode_. I want to be a fullstack
+    developer but i'm more focused on the backend. This is my Potfolio and I used
+    MudBlazor to develop it.
+</MudText>
+
+<div  class="buttons">
+
+    <MudButton Href="contact"
+               Variant="Variant.Filled" 
+               EndIcon="@Icons.Material.Filled.KeyboardDoubleArrowRight" 
+               Style="background-color: yellowgreen; color: white; width: 200px; height: 50px; border: 2px ; border-radius: 60px;">
+        Contact me here
+    </MudButton>
+
+    <MudButton Href="https://github.com/MudBlazor/MudBlazor"
+               Variant="Variant.Filled" 
+               EndIcon="@Icons.Material.Filled.ArrowDownward" 
+               Style="background-color: yellowgreen; color: white; width: 200px; height: 50px; border: 2px ; border-radius: 60px;">
+        Download my CV
+    </MudButton>
+    <MudButton Href="https://github.com/MudBlazor/MudBlazor"
+               Target="_blank"
+               Variant="Variant.Outlined"
+               EndIcon="@Icons.Custom.Brands.GitHub"
+               Color="Color.Tertiary">
+        GitHub Link
+    </MudButton>
+</div>
+
+<MudText Typo="Typo.h4" GutterBottom="true" class="about">About me</MudText>
+
+<style>
+    .heading {
+        text-align: center;
+    }
+    .buttons {
+        margin-top: 50px; 
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .about {
+        text-align: center;
+        font-family:'Microsoft Sans Serif';
+        margin-bottom: 50px;
+    }
+</style>
+
 
 
