@@ -9,6 +9,23 @@
 
 <MudText Typo="Typo.h4" GutterBottom="true" class="heading">Contact Me</MudText>
 
+<MudText Typo="Typo.body1" Style="text-align:center">
+    Please contact me directly at <em><a href="andrewseanego14@gmail.com">andrewseanego14@gmail.com</a></em> or through this form.
+</MudText>
+
+
+<MudCard>
+    <MudCardContent>
+        <MudForm>
+            <MudTextField Label="First Name" @bind-Value="firstName" />
+            <MudTextField Label="Last Name" @bind-Value="lastName" />
+            <MudTextField Label="Email" @bind-Value="email" />
+            <MudTextField MaxLength="500" Label="Reason for Contact" @bind-Value="contactReason" />
+
+            <MudButton Color="Color.Primary" Variant="Variant.Filled" OnClick="SubmitForm">Submit</MudButton>
+        </MudForm>
+    </MudCardContent>
+</MudCard>
 
 <style>
     .heading {
@@ -18,3 +35,15 @@
     }
 </style>
 
+@code {
+    private string firstName;
+    private string lastName;
+    private string email;
+    private string contactReason;
+
+    private async Task SubmitForm()
+    {
+       // Mail.sendMail(firstName, lastName, email, contactReason);
+        //onsole.WriteLine($"Submitted: {firstName} {lastName}, Email: {email}, Reason: {contactReason}");
+    }
+}
