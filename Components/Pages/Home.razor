@@ -2,56 +2,58 @@
 
 <PageTitle>Home</PageTitle>
 
+<div class="page-background-class">
+    <div class="heading">
+        <MudImage Src="images/5Andrew Seanego anseane022.jpg" Width="200" Height="150" Alt="Andrew Seanego" Elevation="25" Class="rounded-lg"/>
+    </div>
 
-<div class="heading">
-    <MudImage Src="images/5Andrew Seanego anseane022.jpg" Width="200" Height="150" Alt="Andrew Seanego" Elevation="25" Class="rounded-lg"/>
+    <MudText Typo="Typo.h4" Class="pl-16 pr-16 ml-16 mr-16 pt-10">
+        Hi , My name is Andrew Seanego. I am a software developer
+        with 2 years training experience from WeThinkCode_. I want to be a fullstack
+        developer but i'm more focused on the backend. This is my Potfolio and I used
+        MudBlazor to develop it.
+    </MudText>
+
+    <div  class="buttons">
+
+        <MudButton Href="contact"
+                   Variant="Variant.Filled" 
+                   EndIcon="@Icons.Material.Filled.KeyboardDoubleArrowRight" 
+                   Style="background-color: yellowgreen; color: white; width: 200px; height: 50px; border: 2px ; border-radius: 60px;">
+            Contact me here
+        </MudButton>
+
+        <MudButton Href="https://github.com/MudBlazor/MudBlazor"
+                   Variant="Variant.Filled" 
+                   EndIcon="@Icons.Material.Filled.ArrowDownward" 
+                   Style="background-color: yellowgreen; color: white; width: 200px; height: 50px; border: 2px ; border-radius: 60px;">
+            Download my CV
+        </MudButton>
+        <MudButton Href="https://github.com/MudBlazor/MudBlazor"
+                   Target="_blank"
+                   Variant="Variant.Outlined"
+                   EndIcon="@Icons.Custom.Brands.GitHub"
+                   Color="Color.Tertiary">
+            GitHub Link
+        </MudButton>
+    </div>
+
+
+    <MudText Typo="Typo.h4" GutterBottom="true" class="about">About me</MudText>
+    <MudText Typo="Typo.h5" GutterBottom="true" Class="pl-16 pr-16 ml-16 mr-16 pb-10" 
+             Style="font-family:Calibri">
+        I am a recent graduate from WeThinkCode_ in South Africa, passionate about leveraging my skills and enthusiasm for technology.
+        During my time at WeThinkCode_, I engaged with industry professionals and gained valuable insights into the latest 
+        technological developments. This experience, combined with my rigorous education focused on practical workplace experience, 
+        has prepared me for real-world challenges in Systems Development.
+
+        I have developed proficiency in languages such as Python, Java, and Web Development, and I am eager to apply these skills in
+        a professional setting. My hands-on projects, such as creating a Waste Management System API and a multiplayer Toy Robot game, 
+        have equipped me with strong problem-solving abilities and a collaborative mindset. I am excited to bring my technical 
+        expertise and innovative approach to new opportunities in the tech industry.
+
+    </MudText>
 </div>
-
-<MudText Typo="Typo.h4" Class="pl-16 pr-16 ml-16 mr-16 pt-10">
-    Hi , My name is Andrew Seanego. I am a software developer
-    with 2 years training experience from WeThinkCode_. I want to be a fullstack
-    developer but i'm more focused on the backend. This is my Potfolio and I used
-    MudBlazor to develop it.
-</MudText>
-
-<div  class="buttons">
-
-    <MudButton Href="contact"
-               Variant="Variant.Filled" 
-               EndIcon="@Icons.Material.Filled.KeyboardDoubleArrowRight" 
-               Style="background-color: yellowgreen; color: white; width: 200px; height: 50px; border: 2px ; border-radius: 60px;">
-        Contact me here
-    </MudButton>
-
-    <MudButton Href="https://github.com/MudBlazor/MudBlazor"
-               Variant="Variant.Filled" 
-               EndIcon="@Icons.Material.Filled.ArrowDownward" 
-               Style="background-color: yellowgreen; color: white; width: 200px; height: 50px; border: 2px ; border-radius: 60px;">
-        Download my CV
-    </MudButton>
-    <MudButton Href="https://github.com/MudBlazor/MudBlazor"
-               Target="_blank"
-               Variant="Variant.Outlined"
-               EndIcon="@Icons.Custom.Brands.GitHub"
-               Color="Color.Tertiary">
-        GitHub Link
-    </MudButton>
-</div>
-
-<MudText Typo="Typo.h4" GutterBottom="true" class="about">About me</MudText>
-<MudText Typo="Typo.h5" GutterBottom="true" Class="pl-16 pr-16 ml-16 mr-16 pb-10" 
-         Style="font-family:Calibri">
-    I am a recent graduate from WeThinkCode_ in South Africa, passionate about leveraging my skills and enthusiasm for technology.
-    During my time at WeThinkCode_, I engaged with industry professionals and gained valuable insights into the latest 
-    technological developments. This experience, combined with my rigorous education focused on practical workplace experience, 
-    has prepared me for real-world challenges in Systems Development.
-
-    I have developed proficiency in languages such as Python, Java, and Web Development, and I am eager to apply these skills in
-    a professional setting. My hands-on projects, such as creating a Waste Management System API and a multiplayer Toy Robot game, 
-    have equipped me with strong problem-solving abilities and a collaborative mindset. I am excited to bring my technical 
-    expertise and innovative approach to new opportunities in the tech industry.
-
-</MudText>
 
 <style>
     .heading {
@@ -66,6 +68,9 @@
         text-align: center;
         font-family:'Microsoft Sans Serif';
         margin-bottom: 30px;
+    }
+    .body {
+
     }
 </style>
 

@@ -2,62 +2,52 @@
 
 <PageTitle>Projects</PageTitle>
 
-<MudText Typo="Typo.h4" GutterBottom="true" class="heading">My Projects</MudText>
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
 
-<div class="cards" >
-    <MudCard Class="mb-16 pb-16" Style="background-color:whitesmoke">
-        <MudCardHeader>
-            <CardHeaderContent>
-                <MudText Typo="Typo.h5">We Connect Website</MudText>
-                <div class="row">
-                    <MudPaper Class="pa-2 ma-1" Outlined="false" Style="background-color:whitesmoke">Html</MudPaper>
-                    <MudPaper Class="pa-2 ma-1" Outlined="false" Style="background-color:whitesmoke">Css</MudPaper>
-                    <MudPaper Class="pa-2 ma-1" Outlined="false" Style="background-color:whitesmoke">C#</MudPaper>
-                </div>
-            </CardHeaderContent>
-        </MudCardHeader>
-        <MudCardMedia Image="images/pilars.jpg" Height="250" />
-        <MudCardContent>
-            <MudText Typo="Typo.h6" Style="font-family:Calibri">
-                I worked as a fullstack developer to build this website using Mudblazor.
-            </MudText>
-        </MudCardContent>
-    </MudCard>
+<div style="min-height: 100vh;">
+    <MudText Typo="Typo.h4" GutterBottom="true" class="heading">My Projects</MudText>
 
-    <MudCard Class="mb-16 pb-16" Style="background-color:whitesmoke">
-        <MudCardHeader>
-            <CardHeaderContent>
-                <MudText Typo="Typo.h5">Waste Sorting API</MudText>
-                <div class="row">
-                    <MudPaper Class="pa-2 ma-1" Outlined="false" Style="background-color:whitesmoke">Java</MudPaper>
-                </div>
-            </CardHeaderContent>
-        </MudCardHeader>
-        <MudCardMedia Image="images/pilars.jpg" Height="250" />
-        <MudCardContent>
-            <MudText Typo="Typo.h6" Style="font-family:Calibri">
-                I worked as a backend developer to build a restful api that is
-                user-friendly and that empowers users to make environmentally conscious decisions about
-                waste disposal.
-            </MudText>
-        </MudCardContent>
-    </MudCard>
+    <div class="cards" >
 
-    <MudCard Class="mb-16 pb-16" Style="background-color:whitesmoke">
-        <MudCardHeader>
-            <CardHeaderContent>
-                <MudText Typo="Typo.h5">Weather application</MudText>
-                <div class="row">
-                    <MudPaper Class="pa-2 ma-1" Outlined="false" Style="background-color:whitesmoke">Python</MudPaper>
-                </div>
-            </CardHeaderContent>
-        </MudCardHeader>
-        <MudCardMedia Image="images/pilars.jpg" Height="250" />
-        <MudCardContent>
-            <MudText Typo="Typo.h6" Style="font-family:Calibri">
-                This photo was taken in a small village in Istra Croatia.</MudText>
-        </MudCardContent>
-    </MudCard>
+        <MudCard Class="mb-16 pb-16" Style="background-color:whitesmoke">
+            <MudCardHeader>
+                <CardHeaderContent>
+                    <MudText Typo="Typo.h5">Waste Sorting API</MudText>
+                    <div class="row">
+                        <MudPaper Class="pa-2 ma-1" Outlined="false" Style="background-color:whitesmoke">Java</MudPaper>
+                    </div>
+                </CardHeaderContent>
+            </MudCardHeader>
+            <MudCardMedia Image="images/pilars.jpg" Height="250" />
+            <MudCardContent>
+                <MudText Typo="Typo.h6" Style="font-family:Calibri">
+                    I worked as a backend developer to build a restful api that is
+                    user-friendly and that empowers users to make environmentally conscious decisions about
+                    waste disposal.
+                </MudText>
+            </MudCardContent>
+        </MudCard>
+
+        <MudCard Style="background-color:whitesmoke">
+            <MudCardHeader>
+                <CardHeaderContent>
+                    <MudText Typo="Typo.h5">Weather application</MudText>
+                    <div class="row">
+                        <MudPaper Class="pa-2 ma-1" Outlined="false" Style="background-color:whitesmoke">Python</MudPaper>
+                    </div>
+                </CardHeaderContent>
+            </MudCardHeader>
+            <MudCardMedia Image="images/pilars.jpg" Height="250" />
+            <MudCardContent>
+                <MudText Typo="Typo.h6" Style="font-family:Calibri">
+                    I will be creating a weather app which will use the OpenWeatherMap API to retrieve weather data and use
+                    the requests library in Python to fetch the weather API..
+                </MudText>
+            </MudCardContent>
+        </MudCard>
+    </div>
 </div>
 
 <style>
@@ -68,9 +58,9 @@
     }
     .cards {
         width: 600px;
-        height: 500px;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 20px;
     }
 
     .row {

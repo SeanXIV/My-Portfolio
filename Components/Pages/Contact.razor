@@ -14,15 +14,15 @@
 </MudText>
 
 
-<MudCard>
-    <MudCardContent>
+<MudCard class="form">
+    <MudCardContent >
         <MudForm>
-            <MudTextField Label="First Name" @bind-Value="firstName" />
-            <MudTextField Label="Last Name" @bind-Value="lastName" />
-            <MudTextField Label="Email" @bind-Value="email" />
-            <MudTextField MaxLength="500" Label="Reason for Contact" @bind-Value="contactReason" />
+            <MudTextField Label="First Name" Required="true" RequiredError="firstName is required!" @bind-Value="firstName" />
+            <MudTextField Label="Last Name" Required="true" RequiredError="lastName is required!" @bind-Value="lastName" />
+            <MudTextField Label="Email" Required="true" RequiredError="eamil is required!" @bind-Value="email" />
+            <MudTextField MaxLength="500" Label="Reason for Contact" Required="true" RequiredError="You need to specify the reason for contact!" @bind-Value="contactReason" />
 
-            <MudButton Color="Color.Primary" Variant="Variant.Filled" OnClick="SubmitForm">Submit</MudButton>
+            <MudButton Color="Color.Primary" Variant="Variant.Filled" OnClick="SubmitForm" Class="mt-7">Submit</MudButton>
         </MudForm>
     </MudCardContent>
 </MudCard>
@@ -32,6 +32,11 @@
         text-align: center;
         font-family: 'Microsoft Sans Serif';
         margin-bottom: 50px;
+    }
+    .form {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>
 

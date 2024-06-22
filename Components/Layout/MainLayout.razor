@@ -4,33 +4,35 @@
 <MudPopoverProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
-<MudLayout class="layout">
-    <MudPaper MaxWidth="700px" MaxHeight="50px" class="Mudpaper">
-        <MudToolBar Style="display: flex;" class="MudpaperEl">
+
+<div class="page-background-class">
+    <MudLayout>
+        <MudPaper MaxWidth="700px" MaxHeight="50px" class="Mudpaper">
+            <MudToolBar Style="display: flex;" class="MudpaperEl">
                     
 
-            <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home" Title="Favorite" >Home</MudNavLink>
+                <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home" Title="Favorite" >Home</MudNavLink>
                          
-            <MudNavLink Href="about" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.WorkHistory">Experience</MudNavLink>
+                <MudNavLink Href="about" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.WorkHistory">Experience</MudNavLink>
                             
-            <MudNavLink Href="projects" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Notes">Projects</MudNavLink>
+                <MudNavLink Href="projects" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Notes">Projects</MudNavLink>
 
-            <MudNavLink Href="skills" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Score">Skills</MudNavLink>
+                <MudNavLink Href="skills" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Score">Skills</MudNavLink>
                  
-            <MudNavLink Href="contact" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.ContactPage">Contact</MudNavLink>
+                <MudNavLink Href="contact" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.ContactPage">Contact</MudNavLink>
 
        
-        </MudToolBar>
-    </MudPaper>
+            </MudToolBar>
+        </MudPaper>
 
 
-    <MudMainContent>
-        <div class="content">
-            @Body
-        </div>
-    </MudMainContent>
-</MudLayout>
-
+        <MudMainContent>
+            <div>
+                @Body
+            </div>
+        </MudMainContent>
+    </MudLayout>
+</div>
 
 <style>
     .Mudpaper {
@@ -49,8 +51,9 @@
         bottom: 17px;
     }
     .layout {
-        
+        background-image: url(images/back.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-
-
+    
 </style>
