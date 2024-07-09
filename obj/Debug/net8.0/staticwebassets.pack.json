@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\images\\5Andrew Seanego anseane022.jpg"
     },
     {
+      "Id": "C:\\Users\\gwanc\\side_work\\My-Portfolio\\wwwroot\\images\\WeatherApp.png",
+      "PackagePath": "staticwebassets\\images\\WeatherApp.png"
+    },
+    {
+      "Id": "C:\\Users\\gwanc\\side_work\\My-Portfolio\\wwwroot\\images\\back.jpeg",
+      "PackagePath": "staticwebassets\\images\\back.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\gwanc\\side_work\\My-Portfolio\\wwwroot\\images\\background.jpeg",
+      "PackagePath": "staticwebassets\\images\\background.jpeg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.My-portfolio1.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
