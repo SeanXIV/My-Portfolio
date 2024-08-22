@@ -9,9 +9,9 @@
 <div style="min-height: 100vh;">
     <MudText Typo="Typo.h4" GutterBottom="true" class="heading">My Projects</MudText>
 
-    <div class="cards" >
+    <div class="cards">
 
-        <MudCard Class="mb-16 pb-16" Style="background-color:whitesmoke">
+        <MudCard Class="mb-16 pb-16 project-card" Style="background-color:whitesmoke">
             <MudCardHeader>
                 <CardHeaderContent>
                     <MudText Typo="Typo.h5">Waste Sorting API</MudText>
@@ -20,7 +20,7 @@
                     </div>
                 </CardHeaderContent>
             </MudCardHeader>
-            <MudCardMedia Image="images/pilars.jpg" Height="250" />
+            <MudCardMedia Image="images/waste-sorting.jpg" class="image-fit" />
             <MudCardContent>
                 <MudText Typo="Typo.h6" Style="font-family:Calibri">
                     I worked as a backend developer to build a restful api that is
@@ -28,9 +28,20 @@
                     waste disposal.
                 </MudText>
             </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Outlined"
+                           Color="Color.Tertiary"
+                           StartIcon="@Icons.Custom.Brands.GitHub"
+                           Link="https://github.com/SeanXIV/Waste-sorting-api"
+                           Target="_blank"
+                           Style="text-transform:none">
+
+                    View on GitHub
+                </MudButton>
+            </MudCardActions>
         </MudCard>
 
-        <MudCard Style="background-color:whitesmoke">
+        <MudCard Style="background-color:whitesmoke" Class="project-card">
             <MudCardHeader>
                 <CardHeaderContent>
                     <MudText Typo="Typo.h5">Weather application</MudText>
@@ -39,13 +50,22 @@
                     </div>
                 </CardHeaderContent>
             </MudCardHeader>
-            <MudCardMedia Image="images/pilars.jpg" Height="250" />
+            <MudCardMedia Image="images/weather.jpeg" class="image-fit" />
             <MudCardContent>
                 <MudText Typo="Typo.h6" Style="font-family:Calibri">
                     I created a weather app which uses the OpenWeatherMap API to retrieve weather data and use
                     the requests library in Python to fetch the weather API.
                 </MudText>
             </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Outlined" 
+                           Color="Color.Tertiary"
+                           StartIcon="@Icons.Custom.Brands.GitHub"
+                           Link="https://github.com/SeanXIV/Weather-app-Python"
+                           Target="_blank">
+                    View on GitHub
+                </MudButton>
+            </MudCardActions>
         </MudCard>
     </div>
 </div>
@@ -56,6 +76,7 @@
         font-family: 'Microsoft Sans Serif';
         margin-bottom: 50px;
     }
+
     .cards {
         width: 600px;
         margin-left: auto;
@@ -66,8 +87,34 @@
     .row {
         display: flex;
         flex-direction: row;
-        
         align-items: center;
         gap: 10px;
     }
+
+    .image-fit {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .image-fit {
+        width: 100%;
+        aspect-ratio: 16 / 9; /* This maintains a consistent aspect ratio */
+        object-fit: cover;
+    }
+
+    .project-card {
+        transition: all 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Optional: Add a subtle color change on hover */
+    .project-card:hover .mud-card-header {
+        background-color: #f0f0f0;
+    }
+
 </style>
