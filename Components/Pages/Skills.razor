@@ -6,29 +6,29 @@
 <MudText Typo="Typo.h4" GutterBottom="true" class="heading">My Skills</MudText>
 <div style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
     <div class="row1">
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Agile Methodologies</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Problem Solving</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Linux</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Agile Methodologies</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Problem Solving</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Linux</MudPaper>
     </div>
     <div class="row2">
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Python</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Java</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">C#</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">HTML</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">CSS</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Blazor</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Python</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Java</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >C#</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >HTML</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >CSS</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Blazor</MudPaper>
     </div>
     <div class="row3">
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Software Development</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Web Development</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Systems Intergration</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Dev Ops</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Unit Testing</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Software Development</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Web Development</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Systems Intergration</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Dev Ops</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Unit Testing</MudPaper>
     </div>
     <div class="row4">
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Relational Databases</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Docker</MudPaper>
-        <MudPaper Class="pa-5 ma-2" Outlined="false" Style="background-color:whitesmoke">Rest APIs</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Relational Databases</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Docker</MudPaper>
+            <MudPaper Class="pa-5 ma-2 skill-paper" Outlined="false" >Rest APIs</MudPaper>
     </div>
 
 </div>
@@ -39,33 +39,27 @@
         font-family: 'Microsoft Sans Serif';
         margin-bottom: 50px;
     }
-    .row1 {
+
+    .row1, .row2, .row3, .row4 {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 10px;
+        flex-wrap: wrap;
     }
-    .row2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+
+    .skill-paper {
+        transition: all 0.3s ease;
+        background-color: whitesmoke;
     }
-    .row3 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    .row4 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+
+        .skill-paper:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            background-color: #e8e8e8;
+        }
+
     }
 
 </style>
