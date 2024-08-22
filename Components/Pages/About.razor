@@ -10,7 +10,7 @@
 <MudText Typo="Typo.h4" GutterBottom="true" class="heading">My Experience</MudText>
 
 <div class="cards" >
-    <MudCard Class="mb-16 pb-16" Style="background-color:whitesmoke">
+    <MudCard Class="mb-16 pb-16 exp-card" Style="background-color:whitesmoke">
         <MudCardHeader>
             <CardHeaderAvatar>
                 <MudIcon Icon="@Icons.Material.Filled.School" />
@@ -28,7 +28,7 @@
                 shaped my career and personal development.</MudText>
         </MudCardContent>
     </MudCard>
-    <MudCard Class="mb-16 pb-16" Style="background-color:whitesmoke">
+    <MudCard Class="mb-16 pb-16 exp-card" Style="background-color:whitesmoke">
         <MudCardHeader>
             <CardHeaderAvatar>
                 <MudIcon Icon="@Icons.Material.Filled.Work" />
@@ -46,7 +46,7 @@
             </MudText>
         </MudCardContent>
     </MudCard>
-    <MudCard  Style="background-color:whitesmoke">
+    <MudCard Style="background-color:whitesmoke" Class="exp-card">
         <MudCardHeader>
             <CardHeaderAvatar>
                 <MudIcon Icon="@Icons.Material.Filled.Work" />
@@ -81,6 +81,19 @@
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 20px;
+    }
+
+    .exp-card {
+        transition: all 0.3s ease;
+        background-color: whitesmoke;
+    }
+
+        .exp-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            background-color: #e8e8e8;
+        }
+
     }
 </style>
 
